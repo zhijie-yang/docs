@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20260407`](https://github.com/AlmaLinux/container-images/blob/60533c723bf1f0ae0fbc95fdfed669d164ea5cf3/default/amd64/Dockerfile)
-
--	[`10-kitten-minimal`, `10-kitten-minimal-20260407`](https://github.com/AlmaLinux/container-images/blob/60533c723bf1f0ae0fbc95fdfed669d164ea5cf3/minimal/amd64/Dockerfile)
-
--	[`latest`, `10`, `10.1`, `10.1-20260407`](https://github.com/AlmaLinux/container-images/blob/a10872063bb5d3c685a3d22be70ab019972a4e07/default/amd64/Dockerfile)
-
--	[`minimal`, `10-minimal`, `10.1-minimal`, `10.1-minimal-20260407`](https://github.com/AlmaLinux/container-images/blob/a10872063bb5d3c685a3d22be70ab019972a4e07/minimal/amd64/Dockerfile)
-
--	[`8`, `8.10`, `8.10-20260407`](https://github.com/AlmaLinux/container-images/blob/ec087f7d6d1f3a57fff9fe04f24bd68283d86764/default/amd64/Dockerfile)
-
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20260407`](https://github.com/AlmaLinux/container-images/blob/ec087f7d6d1f3a57fff9fe04f24bd68283d86764/minimal/amd64/Dockerfile)
-
--	[`9`, `9.7`, `9.7-20260407`](https://github.com/AlmaLinux/container-images/blob/3514606a54c8c6cfc4b244d43ff60fa03d6b6276/default/amd64/Dockerfile)
-
--	[`9-minimal`, `9.7-minimal`, `9.7-minimal-20260407`](https://github.com/AlmaLinux/container-images/blob/3514606a54c8c6cfc4b244d43ff60fa03d6b6276/minimal/amd64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -71,13 +59,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `winamd64/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `winamd64/almalinux:8` or `winamd64/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `winamd64/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `winamd64/almalinux:8-minimal`) and minor (e.g. `winamd64/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
